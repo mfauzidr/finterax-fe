@@ -7,7 +7,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'gray-purple': "#6f6392",
+        'light-purple' : "#f4edff",
+        'gray-lavender' : "#b8a8cb"
+      },
+    },
   },
   plugins: [daisyui],
   daisyui: {
