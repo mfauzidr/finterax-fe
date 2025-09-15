@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "shared/components/Button.tsx", "apps/landing/src/components/HomeNavbar.tsx", "shared/components/Footer.tsxapps/landing/src/layoutsouts", "apps/landing/src/pages/Home.tsx", "apps/landing/src/pages/NotFound.tsx", "vite-env.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

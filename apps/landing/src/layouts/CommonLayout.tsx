@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Footer from "../components/Footer";
-import HomeNavbar from "../components/navbars/HomeNavbar";
+import HomeNavbar from "../components/HomeNavbar";
 
 const CommonLayout = () => {
   return (

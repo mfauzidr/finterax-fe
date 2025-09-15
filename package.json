@@ -4,11 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev:landing": "vite --config vite.config.ts --mode landing --root apps/landing",
+    "dev:backoffice": "vite --config vite.config.ts --mode backoffice --root apps/backoffice",
+    "build:landing": "tsc && vite build --mode landing --root apps/landing",
+    "build:backoffice": "tsc && vite build --mode backoffice --root apps/backoffice",
+    "preview:landing": "vite preview --mode landing --root apps/landing",
+    "preview:backoffice": "vite preview --mode backoffice --root apps/backoffice",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "tailwind:watch": "tailwindcss -i tailwind.css -o ./src/styles/main.css --watch"
+    "tailwind:watch": "tailwindcss -i tailwind.css -o ./shared/styles/main.css --watch"
   },
   "dependencies": {
     "@babel/runtime": "^7.28.3",
